@@ -1,0 +1,9 @@
+{
+  "name": "validate-form",
+  "version": "0.0.1",
+  "dependencies": {
+    "component/event": "0.1.x",
+    "lapwinglabs/rube-schema": "0.x",
+    "dominicbarnes/form": "0.2.x"
+  }
+}
