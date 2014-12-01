@@ -159,7 +159,7 @@ Validate.prototype.onblur = function(e) {
 
   // validate
   this.validate(name, value, function(err, v) {
-    if (err) return self._blur(err);
+    if (err) return self._blur(err, name);
     return self._blur(null, name, v);
   });
 
