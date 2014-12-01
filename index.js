@@ -32,7 +32,7 @@ function Validate(el) {
 
   // event binding
   event.bind(this.el, 'submit', this.onsubmit.bind(this));
-  var inputs = this.inputs = el.querySelectorAll('input');
+  var inputs = this.inputs = el.querySelectorAll('input,textarea');
   for (var i = 0, input; input = inputs[i++];) {
     event.bind(input, 'blur', this.onblur.bind(this));
   }
