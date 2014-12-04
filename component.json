@@ -1,6 +1,6 @@
 {
   "name": "validate-form",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "component/event": "0.1.x",
     "lapwinglabs/rube-schema": "0.x",
