@@ -62,7 +62,8 @@ Validate.prototype.fields = function(fields) {
  */
 
 Validate.prototype.field = function(name, rube) {
-  this.schema.attr(name, rube);
+  var input = this.el.querySelector('[name="' + name + '"]');
+  input && this.schema.attr(name, rube);
   return this;
 }
 
