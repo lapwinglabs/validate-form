@@ -131,9 +131,13 @@ Validate.prototype.onsubmit = function(e) {
   var attrs = this.schema.attr();
   var form = this.form;
   var json = {};
+  var el;
 
   for (attr in attrs) {
-    json[attr] = this.form.value(attr);
+    el = this.form.input(attr);
+    if (!el.disabled) {
+      json[attr] = this.form.value(attr);
+    }
   }
 
   this.schema(json, this._submit);
